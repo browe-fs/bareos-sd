@@ -6,11 +6,19 @@
 
 - Bareos storage daemon version 17.2 built from a centos:7 image.
 
+### Git clone
+```
+git clone https://github.com/browe-fs/bareos-sd.git
+``` 
 ### Sample run statement
 
 - bareos-sd.conf needs to be in the /etc/bareos folder prior to run time.
 - Add additional volume mount to /var/lib/bareos/storage/ to store files on host machiene 
 
+Docker build statement:
+```
+docker build -t bareos-sd .
+```
 Docker run statement:
 ```
 docker run --name bareos-sd \
